@@ -21,3 +21,38 @@ Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dossiers générés
+build/
+
+# Dossiers de dépendances
+node_modules/
+jspm_packages/
+
+# Dossiers de distribution
+dist/
+
+# Fichiers de déclaration TypeScript (si vous utilisez TypeScript)
+typings/
+
+# Optionnel : cache npm
+.npm
+
+# Optionnel : cache eslint
+.eslintcache
+
+# Optionnel : historique REPL
+.node_repl_history
+
+# Fichiers générés par 'npm pack'
+*.tgz
+
+# Fichier d'intégrité Yarn
+.yarn-integrity
