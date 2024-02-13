@@ -5,13 +5,13 @@ import Article from './Article/article';
 import Signup from './Signup/signup';
 import Login from './Login/login';
 import NoMatch from './NoMatch/nomatch';
-import Addarticle from './AddArticle/addarticle';
+import Addarticle from './AddArticle/addArticle';
 import {Routes, Route, Link} from 'react-router-dom';
 import homeimg from './img/home.svg';
 import searchimg from './img/search.svg';
 import loginimg from './img/login.svg';
 import logoutimg from './img/logout.svg';
-import addarticle from './img/addarticle.svg';
+import addarticle from './img/article.svg';
 
 console.log(homeimg);
 
@@ -46,6 +46,7 @@ function App() {
         <Route exact={true} path="/" element={<Home/>}/>
         <Route exact={true} path="/:id" element={<Home/>}/>
         <Route exact={true} path="/research" element={<Research />} />
+        <Route exact={true} path="/research/:id" element={<Research />} />
         <Route exact={true} path="/article" element={<Article />} />
         <Route exact={true} path="/Addarticle" element={<Addarticle />} />
         <Route exact={true} path="/login" element={<Login />} />
