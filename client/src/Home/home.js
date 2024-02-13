@@ -53,5 +53,3 @@ import Tagbar from '../Tagbar/Tagbar';
     }
 
 export default Home;
-
-"Add Title and article at Home Page"
