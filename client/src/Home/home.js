@@ -38,7 +38,7 @@ import Tagbar from '../Tagbar/Tagbar';
 
         <div className={styles.Alltags}>
             <div className={styles.tagcontainer}>
-                {tags.map(tag =><Tagbar name={tag}/> )}
+                <Tagbar name={tags}/>
             </div>
         </div>
 
