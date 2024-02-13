@@ -44,6 +44,7 @@ function App() {
 
       <Routes>
         <Route exact={true} path="/" element={<Home/>}/>
+        <Route exact={true} path="/:id" element={<Home/>}/>
         <Route exact={true} path="/research" element={<Research />} />
         <Route exact={true} path="/article" element={<Article />} />
         <Route exact={true} path="/Addarticle" element={<Addarticle />} />
