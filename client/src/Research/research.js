@@ -5,7 +5,7 @@ import styles from './research.module.css'
 
         return (
         <>
-            <h1>Research</h1>
+            <h1>Research your article</h1>
         </>
         )
     }

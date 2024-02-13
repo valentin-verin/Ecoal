@@ -4,7 +4,7 @@ import styles from './signup.module.css'
 
         return (
         <>
-            <h1>Welcome - Home</h1>
+            <h1>Sign up</h1>
         </>
         )
     }

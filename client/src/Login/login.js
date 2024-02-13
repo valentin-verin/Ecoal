@@ -4,7 +4,7 @@ import styles from './login.module.css'
 
         return (
         <>
-            <h1 className={styles.h1}>Welcome - Login</h1>
+            <h1 className={styles.h1}>Login</h1>
         </>
         )
     }

@@ -4,7 +4,20 @@ import styles from './article.module.css'
 
         return (
         <>
-            <h1>Article</h1>
+        <div className={styles.allCard}>
+            <div className={styles.card}>
+                <h1>Article 1</h1>
+            </div>
+            <div className={styles.card}>
+                <h1>Article 2</h1>
+            </div>
+            <div className={styles.card}>
+                <h1>Article 3</h1>
+            </div>
+            <div className={styles.card}>
+                <h1>Article 4</h1>
+            </div>
+        </div>
         </>
         )
     }
