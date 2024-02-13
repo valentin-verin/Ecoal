@@ -1,5 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 .card{
-    background-color: red;
-    padding: 2rem 0;
-    margin: 2rem 0;
+    padding: 2rem 1.5rem;
+    margin: 0rem 0;
+    border: 2px solid #1A1A1A; 
 }
+
+.usersave{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user h3{
+    color: #1A1A1A; 
+    font-family: "Albert Sans"; 
+    font-size: 1rem;
+    text-transform: uppercase; 
+}
+
+.user .h3grey{
+    color: rgba(26, 26, 26, 0.40)
+}
+
+.save button{
+    font-family: "Albert Sans"; 
+    text-decoration: none;
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid #1A1A1A;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 13.2px */ 
+    background: #DDD;
+    color: #1A1A1A;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.save button:hover{
+    background: #1A1A1A;
+    color: #DDD;
+}
+
+.descriptionimg{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.description h3{
+    font-size: 2rem; 
+    color: #1A1A1A;
+    text-transform: uppercase;
+    font-family: "Albert Sans";
+    line-height: 110%;
+}
+
+.description h4{
+    font-size: 1rem; 
+    color: #1A1A1A;
+    text-transform: uppercase;
+    font-family: "Albert Sans";
+    line-height: 110%;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.genre{
+    display: flex;
+    gap: 1rem;
+}
+
+.genre h5{
+    font-weight: 700;
+    font-size: 1rem; 
+    color: #1A1A1A;
+    text-transform: uppercase;
+    font-family: "Albert Sans";
+    line-height: 110%;
+    text-transform: none;
+}
+
+.genre .h3grey{
+    color: rgba(26, 26, 26, 0.40)
+}
+
+.imgdescription img{
+    border-radius: 2px;
+    width: 150px;
+}
+
+
