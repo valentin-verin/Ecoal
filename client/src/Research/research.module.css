@@ -1,0 +1,44 @@
+.tagcontainer{
+    display: flex;
+    gap: 1rem;
+}
+
+.Alltags{
+    padding: 0.5rem;
+    overflow-y: auto; /* Active le défilement vertical si nécessaire */
+    scrollbar-width: none; /* Pour les navigateurs qui supportent les propriétés CSS de scrollbar, comme Firefox */
+    -ms-overflow-style: none; /* Pour Internet Explorer 10+ */
+}
+
+.title{
+    font-size: 28px; 
+    font-family: "Albert Sans"; 
+}
+
+.inputContainer {
+    padding: 0 0.5rem;
+}
+
+.inputContainer input {
+    font-family: "Albert Sans";
+    width: 90%;
+    height: 56px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0.5rem 0rem; 
+    align-items: center;
+    border: 2px solid #1A1A1A;
+    background: transparent;
+
+    font-weight: 700;
+    font-size: 1rem;
+    color: rgba(26, 26, 26, 0.70);
+}
+
+.padding{
+    padding: 0.5rem;
+}
+
+input:focus{
+    outline: none;
+}
