@@ -5,8 +5,6 @@ import Tagbar from '../Tagbar/Tagbar';
 
     function Home(props) { 
 
-        const tags = ['All', 'RNB', 'TECHNO', 'JAZZ', 'ROCK', 'RAP']
-
         return (
         <>
         {/* Melody Matters */}
@@ -38,13 +36,22 @@ import Tagbar from '../Tagbar/Tagbar';
 
         <div className={styles.Alltags}>
             <div className={styles.tagcontainer}>
-                <Tagbar name={tags}/>
+                <Tagbar page={"home"}/>
             </div>
         </div>
 
+        <div className={styles.padding}>
+            <h1 className={styles.title}>All</h1>
+        </div> 
+
+        <div className={styles.articles}>         
             <Article />
+        </div>
+
         </>
         )
     }
 
 export default Home;
+
+"Add Title and article at Home Page"
