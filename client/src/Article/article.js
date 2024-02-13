@@ -36,7 +36,7 @@ import articlecover from '../img/articlecover.png';
 
             </div>
         </div>
-
+        
         {/* Article  */}
         <div className={styles.allCard}>
             <div className={styles.card}>
@@ -54,7 +54,7 @@ import articlecover from '../img/articlecover.png';
                 <div className={styles.descriptionimg}>
                     <div className={styles.description}>
                         <h3>THE BEST OF JAZZ MUSIC 2024</h3>
-                        <h4>Lorem ipsum dolor sit amet consectetur. Elementum non maecenas erat fusce enim in arcu vel luctus. Ullamcorper pellentesque a vitae nec tortor morbi. Nulla tellus sed mauris rutrum nec sit. Ac neque eget ultrices dapibus.</h4>
+                        <h4>Lorem ipsum dolor sit amet consectetur. Elementum non maecenas erat fusce enim in arcu vel luctus. </h4>
                         <div className={styles.genre}>
                             <h5>JAZZ</h5>
                             <h5 className={styles.h3grey}>5 MIN TO READ</h5>
@@ -67,6 +67,8 @@ import articlecover from '../img/articlecover.png';
 
             </div>
         </div>
+
+       
         
         
 
