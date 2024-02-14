@@ -1,13 +1,15 @@
 import styles from './article.module.css';
 import user from '../img/womanuser.png';
 import articlecover from '../img/articlecover.png';
+import { Link } from 'react-router-dom';
 
     function Article() { 
 
         return (
         <>
         {/* Article  */}
-        <div className={styles.allCard}>
+        <Link to="/detailArticle" className={styles.Allcard}>
+
             <div className={styles.card}>
 
                 <div className={styles.usersave}>
@@ -35,10 +37,10 @@ import articlecover from '../img/articlecover.png';
                 </div>
 
             </div>
-        </div>
+        </Link>
         
         {/* Article  */}
-        <div className={styles.allCard}>
+        <Link to="/detailArticle" className={styles.Allcard}>
             <div className={styles.card}>
 
                 <div className={styles.usersave}>
@@ -66,10 +68,8 @@ import articlecover from '../img/articlecover.png';
                 </div>
 
             </div>
-        </div>
-
-       
-        
+        </Link>
+     
         
 
         
