@@ -1,6 +1,7 @@
 import styles from './home.module.css'
 import Article from '../Article/article';
 import Tagbar from '../Tagbar/Tagbar';
+import { Link } from 'react-router-dom';
 
 
     function Home(props) { 
