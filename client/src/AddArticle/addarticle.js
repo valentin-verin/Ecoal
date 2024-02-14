@@ -1,6 +1,6 @@
 
 
-    function Addarticle() { 
+    function AddArticle() { 
 
         return (
         <>
