@@ -1,0 +1,67 @@
+.body {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.username {
+    display: flex;
+    width: 375px;
+    height: 30px;
+    /* padding: 24px 20px; */
+    flex-direction: line;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border: 1px solid #1A1A1A;
+    margin: 32px 0px 0px 0px
+}
+.password {
+    display: flex;
+    width: 375px;
+    height: 30px;
+    /* padding: 24px 20px; */
+    flex-direction: line;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border: 1px solid #1A1A1A;
+}
+
+.loginbut {
+    color: rgba(26, 26, 26, 0.80);
+    font-family: "Albert Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    /* 17.6px */
+    letter-spacing: -0.32px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    margin: 32px 20px
+}
+.title {
+    color: #1A1A1A;
+    font-family: "Albert Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    /* 35.2px */
+    letter-spacing: -0.64px;
+    text-transform: uppercase;
+    margin: 20px
+}
+.back {
+    display: inline-flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin: 24px 20px
+}
+.img {
+    width: 375px;
+    height: 457px;
+    flex-shrink: 0;
+}
