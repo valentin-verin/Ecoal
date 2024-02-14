@@ -12,6 +12,7 @@ import searchimg from './img/search.svg';
 import loginimg from './img/login.svg';
 import logoutimg from './img/logout.svg';
 import addarticle from './img/addarticle.svg';
+import Splash from './splash/splash';
 
 console.log(homeimg);
 
@@ -50,6 +51,7 @@ function App() {
         <Route exact={true} path="/Addarticle" element={<Addarticle />} />
         <Route exact={true} path="/login" element={<Login />} />
         <Route exact={true} path="/signup" element={<Signup />} />
+        <Route exact={true} path="/splash" element={<Splash />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
     </>

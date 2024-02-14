@@ -1,0 +1,28 @@
+.title {
+    width: 243px;
+    color: #1A1A1A;
+    font-family: "Albert Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    /* 35.2px */
+    letter-spacing: -0.64px;
+    text-transform: uppercase;
+    margin: 20px 112px 24px 20px
+}
+
+.img {
+    width: 375px;
+    height: 594px;
+    flex-shrink: 0;
+}
+
+.button {
+    display: flex;
+    width: 375px;
+    padding: 24px 20px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #1A1A1A;
+}
