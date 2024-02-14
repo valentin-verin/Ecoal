@@ -18,20 +18,16 @@ function App() {
 
       <nav className='navbar'>
         <div className="icon-container">
-          <Link to="/" className="link"><img src={homeimg} className="icon" alt="Home" /></Link>
-          <span className="icon-label">Home</span>
+          <Link to="/" className="link">Home</Link>
         </div>
         <div className="icon-container">
-          <Link to="/research" className='link'><img src={searchimg} className="icon" alt="Home" /></Link>
-          <span className="icon-label">Search</span>
+          <Link to="/research" className='link'>Search</Link>
         </div>
         <div className="icon-container">
-          <Link to="/login" className='link'><img src={loginimg} className="icon" alt="Home" /></Link>
-          <span className="icon-label">Log in</span>
+          <Link to="/saved" className='link'>Saved</Link>
         </div>
         <div className="icon-container">
-          <Link to="/signup" className='link'><img src={logoutimg} className="icon" alt="Home" /></Link>
-          <span className="icon-label">Log out</span>
+          <Link to="/profile" className='link'>Profile</Link>
         </div>
       </nav>
 

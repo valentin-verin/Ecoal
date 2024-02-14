@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\API\TagController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -32,5 +33,4 @@ Route::group([
     
 });
 
-
-
+Route::apiResource('tags', TagController::class);
