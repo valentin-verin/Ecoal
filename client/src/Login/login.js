@@ -5,7 +5,7 @@ function Login() {
     return (
         <div className="login">
             <button className={styles.back}>
-                back
+                BACK
             </button>
             <h1 className={styles.title}>LOGIN</h1>
             <img className={styles.img} src={logo} alt="" />
@@ -15,7 +15,7 @@ function Login() {
                         type="text"
                         id="username"
                         name="username"
-                        defaultValue="username"
+                        placeholder= "username"
                         className={styles.username}
                     />
                 </div>
@@ -24,7 +24,7 @@ function Login() {
                         type="password"
                         id="password"
                         name="password"
-                        defaultValue="password"
+                        placeholder= "password"
                         className={styles.password}
                     />
                 </div>

@@ -5,7 +5,7 @@ function Login() {
     return (
         <div className="Register">
             <button className={styles.back}>
-                back
+                BACK
             </button>
             <h1 className={styles.title}>REGISTER</h1>
             <img className={styles.img} src={logo} alt="" />
@@ -15,28 +15,28 @@ function Login() {
                         type="text"
                         id="name"
                         name="name"
-                        defaultValue="name"
+                        placeholder= "name"
                         className={styles.name}
                     />
                     <input
                         type="text"
                         id="username"
                         name="username"
-                        defaultValue="username"
+                        placeholder= "username"
                         className={styles.username}
                     />
                     <input
                         type="text"
                         id="phone"
                         name="phone"
-                        defaultValue="phone"
+                        placeholder= "phone"
                         className={styles.phone}
                     />
                     <input
                         type="text"
                         id="email"
                         name="email"
-                        defaultValue="email"
+                        placeholder= "email"
                         className={styles.email}
                     />
                 </div>
@@ -45,14 +45,14 @@ function Login() {
                         type="password"
                         id="password"
                         name="password"
-                        defaultValue="password"
+                        placeholder= "password"
                         className={styles.password}
                     />
-                     <input
+                    <input
                         type="password"
                         id="repeat password"
                         name="repeat password"
-                        defaultValue="repeat password"
+                        placeholder= "repeat password"
                         className={styles.password}
                     />
                 </div>
