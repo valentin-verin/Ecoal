@@ -1,11 +1,10 @@
 import styles from './home.module.css'
 import Article from '../Article/article';
 import Tagbar from '../Tagbar/Tagbar';
+import { Link } from 'react-router-dom';
 
 
     function Home(props) { 
-
-        const tags = ['All', 'RNB', 'TECHNO', 'JAZZ', 'ROCK', 'RAP']
 
         return (
         <>
@@ -38,11 +37,18 @@ import Tagbar from '../Tagbar/Tagbar';
 
         <div className={styles.Alltags}>
             <div className={styles.tagcontainer}>
-                <Tagbar name={tags}/>
+                <Tagbar page={"home"}/>
             </div>
         </div>
 
+        <div className={styles.padding}>
+            <h1 className={styles.title}>All</h1>
+        </div> 
+
+        <div className={styles.articles}>         
             <Article />
+        </div>
+
         </>
         )
     }
