@@ -3,18 +3,21 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
-use App\Models\Tag;
+use App\Models\Article;
 use Illuminate\Http\Request;
 
-class TagController extends Controller
+class ArticleController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $tags = Tag::all();
-        return response()->json($tags);
+        $articles = Article::all();
+        $articles->each(function($article){
+            $article->tags = $article->tags;
+        });
+        return response()->json($articles);
     }
 
     /**
@@ -28,15 +31,15 @@ class TagController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Tag $tag)
+    public function show(Article $article)
     {
-        return response()->json($tag);
+        return response()->json($article);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Tag $tag)
+    public function update(Request $request, Article $article)
     {
         //
     }
@@ -44,7 +47,7 @@ class TagController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Tag $tag)
+    public function destroy(Article $article)
     {
         //
     }
