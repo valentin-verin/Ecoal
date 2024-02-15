@@ -1,0 +1,16 @@
+.titleDetail {
+    color: #1A1A1A;
+    font-family: "Albert Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    /* 44px */
+    letter-spacing: -0.8px;
+    text-transform: uppercase;
+}
+
+.padding {
+    padding: 0 1rem;
+    margin-top: 1rem;
+}

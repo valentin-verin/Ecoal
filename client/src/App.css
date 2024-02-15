@@ -1,25 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
-  font-family: "Albert Sans";
+*{
+    font-family: "Albert Sans";
 }
 
-body{
+body {
   background-color: #DDDDDD;
   padding-bottom: 10rem;
 }
 
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: fixed;
-  bottom: 0; 
+  bottom: 0;
   width: 100%;
   background-color: #DDDDDD;
 }
 
-.navbar .link{
+.icon-container .link {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.875rem;
@@ -30,17 +30,22 @@ body{
   color: #1A1A1A;
   transition: .3s;
   padding: 2rem 0;
-  display: flex;
-  align-items: center;
-  opacity: 35%;
+  /* display: flex;
+  align-items: center; /
+  / opacity: 35%; */
+  width: 100%;
+  text-align: center;
+}
+.icon-container .link:hover {
+  color: grey;
 }
 
-.navbar .link:active{
+.navbar .link:active {
   opacity: 100%;
 }
 
 
-.icon{
+.icon {
   width: 30px;
   filter: grayscale(100%);
 }
@@ -56,7 +61,7 @@ body{
 .icon-label {
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, 0.5s; 
+  transition: visibility 0s, 0.5s;
 }
 
 .icon-container:hover .icon-label {
@@ -64,4 +69,24 @@ body{
   opacity: 1;
 }
 
+.usingpage {
+  background-color: #1A1A1A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: -webkit-fill-available;
+  border: 1px solid #1A1A1A;
+}
 
+.usingpage .link {
+  color: #DDDDDD;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: -0.0175rem;
+  transition: .3s;
+  padding: 2rem 0;
+}

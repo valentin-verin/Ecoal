@@ -1,12 +1,12 @@
 import styles from './login.module.css'
 import logo from "../img/login.png"
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Login() {
     return (
         <div className="login">
-            <button className={styles.back}>
-                BACK
-            </button>
+            <Link className={styles.backButton} to="/">Back</Link> 
             <h1 className={styles.title}>LOGIN</h1>
             <img className={styles.img} src={logo} alt="" />
             <form>
@@ -25,16 +25,25 @@ function Login() {
                         id="password"
                         name="password"
                         placeholder= "Password"
-                        className={styles.password}
+                        className={styles.username}
                     />
                 </div>
-                <input
-                    type="submit"
-                    value="Log In"
-                    className={styles.loginbut}
-                />
+                <div className={styles.bottomLine}></div>
+                <div >
+                    <input
+                        type="submit"
+                        id="submit"
+                        name="submit"
+                        value="Envoyer"
+                        className={styles.submit}
+                    />
+                </div>
             </form>
-            {/* <a className="link" href="/signup">Sign Up</a> */}
+
+
+            <div className={styles.account}>
+                <Link className={styles.accountlink} to="/signup">Sign Up</Link> 
+            </div>
         </div>
     )
 }

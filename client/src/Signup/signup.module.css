@@ -105,7 +105,80 @@
 }
 
 .img {
-    width: 375px;
-    height: 225px;
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.bottomLine{
+    border: 0.5px solid #000;
+}
+
+.username {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    padding: 24px 0px;
+    padding-left: 24px;
+    flex-direction: line;
+    justify-content: space-between;
+    align-items: flex-start;
     flex-shrink: 0;
+    border-top: 1px solid #1A1A1A;
+    text-transform: uppercase;
+    background: transparent;
+}
+
+.username:nth-child(01){
+    border-top: 2px solid #000;
+}
+
+.backButton{
+    margin: 0 0.5rem;
+    margin-top: 1rem;
+    padding: 6px 12px;
+    border: 1px solid #1A1A1A;
+    font-family: "Albert Sans"; 
+    text-decoration: none;
+    border: 2px solid #1A1A1A;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #DDD;
+    color: #1A1A1A;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.account{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 0.5rem;
+    margin-top: 5rem;
+}
+
+.accountlink{
+    color: rgba(26, 26, 26, 0.80);
+    font-family: "Albert Sans";
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 110%; /* 17.6px */
+    letter-spacing: -0.32px;
+    text-decoration-line: underline;
+    text-transform: uppercase; 
+}
+
+.submit{
+    margin-top: 2rem;
+    border: none;
+    display: flex;
+    width: 100%;
+    height: 30px;
+    padding: 24px 20px;
+    flex-direction: line;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #1A1A1A;
+    color: #DDD;
+    text-transform: uppercase;
 }
