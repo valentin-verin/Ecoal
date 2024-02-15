@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .tag{
-    font-family: "Albert Sans"; 
     text-decoration: none;
     text-transform: uppercase;
     display: flex;
@@ -9,7 +8,7 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    border: 1px solid #1A1A1A;
+    border: 2px solid #1A1A1A;
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 700;
