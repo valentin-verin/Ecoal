@@ -6,12 +6,17 @@ import Signup from './Signup/signup';
 import Login from './Login/login';
 import NoMatch from './NoMatch/nomatch';
 import Detailarticle from './Detailarticle/detailarticle';
+import Splash from './splash/splash';
+import Changename from './changename/changename';
+import Profile from './Profile/profile';
 import {Routes, Route, Link} from 'react-router-dom';
+import addarticle from './img/addArticle.svg';
 import homeimg from './img/home.svg';
 import searchimg from './img/search.svg';
 import loginimg from './img/login.svg';
 import logoutimg from './img/logout.svg';
 import addarticle from './img/addarticle.svg';
+
 
 
 function App() {
@@ -40,6 +45,7 @@ function App() {
         <Route exact={true} path="/research" element={<Research />} />
         <Route exact={true} path="/research/:id" element={<Research />} />
         <Route exact={true} path="/article" element={<Article />} />
+        <Route exact={true} path="/Addarticle" element={<Detailarticle />} />
         <Route exact={true} path="/Addarticle" element={<Addarticle />} />
         <Route exact={true} path="/login" element={<Login />} />
         <Route exact={true} path="/signup" element={<Signup />} />
