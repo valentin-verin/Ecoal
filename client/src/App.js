@@ -5,7 +5,7 @@ import Article from './Article/article';
 import Signup from './Signup/signup';
 import Login from './Login/login';
 import NoMatch from './NoMatch/nomatch';
-import DetailArticle from './detailArticle/detailarticle';
+import Addarticle from './AddArticle/addarticle';
 import {Routes, Route, Link} from 'react-router-dom';
 import homeimg from './img/home.svg';
 import searchimg from './img/search.svg';
