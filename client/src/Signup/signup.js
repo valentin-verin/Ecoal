@@ -34,8 +34,10 @@ function Register() {
     }
 
     return (
-        <div className="Register">
+        <>
+        <div className={styles.link}>
             <Link className={styles.backButton} to="/">Back</Link> 
+        </div>
             <h1 className={styles.title}>REGISTER</h1>
             <img className={styles.img} src={logo} alt="" />
             
@@ -47,7 +49,7 @@ function Register() {
                         id="name"
                         name="name"
                         placeholder= "Name"
-                        className={styles.name}
+                        className={styles.username}
                         onChange={e => handleChange(e, "name")}
 
                     />
@@ -56,7 +58,7 @@ function Register() {
                         id="email"
                         name="email"
                         placeholder= "E-mail"
-                        className={styles.email}
+                        className={styles.username}
                         onChange={e => handleChange(e, "email")}
 
                     />
@@ -65,7 +67,7 @@ function Register() {
                         id="password"
                         name="password1"
                         placeholder= "Password"
-                        className={styles.password}
+                        className={styles.username}
                         onChange={e => handleChange(e, "password1")}
 
                     />
@@ -74,7 +76,7 @@ function Register() {
                         id="repeat password"
                         name="password2"
                         placeholder= "Repeat Password"
-                        className={styles.password}
+                        className={styles.username}
                         onChange={e => handleChange(e, "password2")}
 
                     />
@@ -101,7 +103,7 @@ function Register() {
             <div className={styles.account}>
                 <Link className={styles.accountlink} to="/login">Log in</Link> 
             </div>
-        </div>
+        </>
     )
 }
 
