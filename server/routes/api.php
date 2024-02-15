@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\API\ArticleController;
+use App\Http\Controllers\API\ArtistController;
 use App\Http\Controllers\API\TagController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -34,3 +36,5 @@ Route::group([
 });
 
 Route::apiResource('tags', TagController::class);
+Route::apiResource('artists', ArtistController::class);
+Route::apiResource('articles', ArticleController::class);

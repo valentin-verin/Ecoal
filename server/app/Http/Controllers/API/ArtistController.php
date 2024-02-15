@@ -3,18 +3,18 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
-use App\Models\Tag;
+use App\Models\Artist;
 use Illuminate\Http\Request;
 
-class TagController extends Controller
+class ArtistController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $tags = Tag::all();
-        return response()->json($tags);
+        $artists = Artist::all();
+        return response()->json($artists);
     }
 
     /**
@@ -28,15 +28,15 @@ class TagController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Tag $tag)
+    public function show(Artist $artist)
     {
-        return response()->json($tag);
+        return response()->json($artist);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Tag $tag)
+    public function update(Request $request, Artist $artist)
     {
         //
     }
@@ -44,7 +44,7 @@ class TagController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Tag $tag)
+    public function destroy(Artist $artist)
     {
         //
     }
