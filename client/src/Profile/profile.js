@@ -1,12 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Await, Link } from 'react-router-dom';
 import styles from "./profile.module.css";
 import arrowIcon from "../img/arrow.svg";
+
+
+const account = window.localStorage.getItem('account');
 
 function Profile() {
     const userDetail = require('./data.json');
     const userData = userDetail[0];
-
+    
 
     return (
         

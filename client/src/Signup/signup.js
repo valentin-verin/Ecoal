@@ -24,7 +24,6 @@ function Register() {
             data.append("email", user.email);
             data.append("password", user.password1);
             const result = (await axios.post("http://localhost:8000/api/register", data)).data;
-            console.log(result)
             window.localStorage.setItem("account", JSON.stringify(result));
             setUser({name: "", email: "", password1: "", password2: ""});
             navigate('/');
@@ -47,7 +46,7 @@ function Register() {
                         id="name"
                         name="name"
                         placeholder= "Name"
-                        className={styles.name}
+                        className={styles.username}
                         onChange={e => handleChange(e, "name")}
 
                     />
@@ -56,7 +55,7 @@ function Register() {
                         id="email"
                         name="email"
                         placeholder= "E-mail"
-                        className={styles.email}
+                        className={styles.username}
                         onChange={e => handleChange(e, "email")}
 
                     />
@@ -65,7 +64,7 @@ function Register() {
                         id="password"
                         name="password1"
                         placeholder= "Password"
-                        className={styles.password}
+                        className={styles.username}
                         onChange={e => handleChange(e, "password1")}
 
                     />
@@ -74,7 +73,7 @@ function Register() {
                         id="repeat password"
                         name="password2"
                         placeholder= "Repeat Password"
-                        className={styles.password}
+                        className={styles.username}
                         onChange={e => handleChange(e, "password2")}
 
                     />

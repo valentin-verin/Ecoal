@@ -22,6 +22,10 @@ import { useLocation } from 'react-router-dom';
 function App() {
   const location = useLocation();
 
+  let account = JSON.parse(window.localStorage.getItem('account'))
+
+  console.log(account)
+
   return (
 
     <>
@@ -36,9 +40,13 @@ function App() {
           <div className={`${location.pathname === '/saved' ? 'usingpage' : 'icon-container'}`}>
               <Link to="/saved" className='link'>Saved</Link>
           </div>
+
+          {account ?
           <div className={`${location.pathname === '/profile' ? 'usingpage' : 'icon-container'}`}>
               <Link to="/profile" className='link'>Profile</Link>
-          </div>
+          </div> : <div className={`${location.pathname === '/login' ? 'usingpage' : 'icon-container'}`}>
+              <Link to="/login" className='link'>Login</Link>
+          </div>}
       </nav>
 
       <Routes>
