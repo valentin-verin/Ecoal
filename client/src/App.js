@@ -5,13 +5,14 @@ import Article from './Article/article';
 import Signup from './Signup/signup';
 import Login from './Login/login';
 import NoMatch from './NoMatch/nomatch';
-import Addarticle from './AddArticle/addarticle';
+import DetailArticle from './detailArticle/detailarticle';
 import {Routes, Route, Link} from 'react-router-dom';
 import homeimg from './img/home.svg';
 import searchimg from './img/search.svg';
 import loginimg from './img/login.svg';
 import logoutimg from './img/logout.svg';
-import addarticle from './img/addarticle.svg';
+import detailArticleimg from './img/detailArticle.svg';
+import Profile from './Profile/profile';
 
 console.log(homeimg);
 
@@ -29,7 +30,7 @@ function App() {
           <span className="icon-label">Search</span>
         </div>
         <div className="icon-container">
-          <Link to="/addarticle" className='link'><img src={addarticle} className="icon" alt="Home" /></Link>
+          <Link to="/detailArticle" className='link'><img src={detailArticleimg} className="icon" alt="Home" /></Link>
           <span className="icon-label">Add</span>
         </div>
         <div className="icon-container">
@@ -46,11 +47,13 @@ function App() {
         <Route exact={true} path="/" element={<Home/>}/>
         <Route exact={true} path="/:id" element={<Home/>}/>
         <Route exact={true} path="/research" element={<Research />} />
+        <Route exact={true} path="/research/:id" element={<Research />} />
         <Route exact={true} path="/article" element={<Article />} />
-        <Route exact={true} path="/Addarticle" element={<Addarticle />} />
+        <Route exact={true} path="/detailArticle" element={<DetailArticle />} />
         <Route exact={true} path="/login" element={<Login />} />
         <Route exact={true} path="/signup" element={<Signup />} />
         <Route path="*" element={<NoMatch />} />
+        <Route exact={true} path="/profile" element={<Profile />} />
       </Routes>
     </>
   );
