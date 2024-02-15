@@ -5,16 +5,15 @@
 }
 
 .username {
-    display: flex;
-    width: 375px;
+    width: 100vw;
+    max-width: calc(100% - 40px);
     height: 30px;
-    /* padding: 24px 20px; */
-    flex-direction: line;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-shrink: 0;
     border: 1px solid #1A1A1A;
-    margin: 0px 0px 0px 0px;
+    margin: 0px;
+    background-color: transparent;
+    padding: 20px 7px 20px 30px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .button {
@@ -24,13 +23,13 @@
     font-style: normal;
     font-weight: 700;
     line-height: 110%;
-    /* 17.6px */
     letter-spacing: -0.32px;
     text-decoration-line: underline;
     text-transform: uppercase;
     margin: 20px 20px;
     border: 0;
     background-color: transparent;
+    cursor:pointer;
 }
 
 .title {
@@ -40,10 +39,9 @@
     font-style: normal;
     font-weight: 700;
     line-height: 110%;
-    /* 35.2px */
     letter-spacing: -0.64px;
     text-transform: uppercase;
-    margin: 20px
+    margin: 20px;
 }
 
 .back {
@@ -60,4 +58,30 @@
     width: 375px;
     height: 457px;
     flex-shrink: 0;
+}
+
+.backButton {
+    margin-top: 1rem;
+    padding: 6px 12px;
+    border: 1px solid #1A1A1A;
+    font-family: "Albert Sans"; 
+    text-decoration: none;
+    border: 2px solid #1A1A1A;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #DDD;
+    color: #1A1A1A;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left:20px;
+}
+
+.backButton:hover{
+    color: #DDD;
+    background: #1A1A1A;
+}
+
+.padding{
+    padding: 0 0.5rem;
+    margin-top: 1rem;
 }
