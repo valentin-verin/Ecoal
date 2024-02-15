@@ -10,7 +10,7 @@ function Profile() {
 
     return (
         
-        <div className={styles.profile}>
+        <div>
             {/* Display user image */}
             <img src={userData.userImage} alt="User" className={styles.userImage} />
 
@@ -19,41 +19,39 @@ function Profile() {
                 <Link to="/edit/nickname" className={styles.detail}>
                     <div className={styles.arrowContainer}>
                         <div className={styles.innerContainer}>
-                            <span>Nickname: </span>
+                            <span>Nickname </span>
                             <div className={styles.editButton}>{userData.nickName}</div>
                         </div>
-
-                        <img src={arrowIcon} alt="arrow-Icon" />
-
+                        <img className={styles.arrow} src={arrowIcon} alt="arrow-Icon" />
                     </div>
                 </Link>
                 <Link to="/edit/username" className={styles.detail}>
                     <div className={styles.arrowContainer}>
                         <div className={styles.innerContainer}>
-                            <span>Username: </span>
+                            <span>Username </span>
                             <div className={styles.editButton}>{userData.userName}</div>
                         </div>
-                        <img src={arrowIcon} alt="arrow-Icon" />
+                        <img className={styles.arrow} src={arrowIcon} alt="arrow-Icon" />
                     </div>
                 </Link>
 
                 <Link to="/edit/phonenumber" className={styles.detail}>
                     <div className={styles.arrowContainer}>
                         <div className={styles.innerContainer}>
-                            <span>Phone Number: </span>
+                            <span>Phone Number </span>
                             <div className={styles.editButton}>{userData.PhoneNumber}</div>
                         </div>
-                        <img src={arrowIcon} alt="arrow-Icon" />
+                        <img className={styles.arrow} src={arrowIcon} alt="arrow-Icon" />
                     </div>
                 </Link>
 
                 <Link to="/edit/email" className={styles.detail}>
                     <div className={styles.arrowContainer}>
                         <div className={styles.innerContainer}>
-                            <span>Email: </span>
+                            <span>Email </span>
                             <div className={styles.editButton}>{userData.Email}</div>
                         </div>
-                        <img src={arrowIcon} alt="arrow-Icon" />
+                        <img className={styles.arrow} src={arrowIcon} alt="arrow-Icon" />
                     </div>
                 </Link>
 
@@ -62,10 +60,15 @@ function Profile() {
                         <div>
                             <div className={styles.editButton}>PASSWORD</div>
                         </div>
-                        <img src={arrowIcon} alt="arrow-Icon" />
+                        <img className={styles.arrow} src={arrowIcon} alt="arrow-Icon" />
                     </div>
                 </Link>
-<br/><br/><br/><br/><br/><br/><br/>
+            </div>
+            <div className={styles.bottomLine}></div>
+
+            <div className={styles.account}>
+                <Link to="/" className={styles.accountlink}>Delete my account</Link>
+                <Link to="/" className={styles.accountlink}>Log out</Link>
             </div>
         </div>
     );

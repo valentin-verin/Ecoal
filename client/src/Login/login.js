@@ -3,6 +3,9 @@ import logo from "../img/login.png"
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 function Login() {
     const [user, setUser] = useState({email: "", password: ""});
@@ -29,9 +32,7 @@ function Login() {
 
     return (
         <div className="login">
-            <button className={styles.back}>
-                BACK
-            </button>
+            <Link className={styles.backButton} to="/">Back</Link> 
             <h1 className={styles.title}>LOGIN</h1>
             <img className={styles.img} src={logo} alt="" />
             <form onSubmit={handleSubmit}>
@@ -60,8 +61,15 @@ function Login() {
                 >
                     Login
                 </button>
+
+                <div className={styles.bottomLine}></div>
+              
             </form>
-            {/* <a className="link" href="/signup">Sign Up</a> */}
+
+
+            <div className={styles.account}>
+                <Link className={styles.accountlink} to="/signup">Sign Up</Link> 
+            </div>
         </div>
     )
 }

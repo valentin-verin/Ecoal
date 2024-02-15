@@ -3,6 +3,9 @@ import logo from "../img/register.png"
 import { useState } from 'react';
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom'
+import React from 'react';
+
 
 function Register() {
     const [user, setUser] = useState({name: "", password1: "", password2: "", email: "" });
@@ -32,13 +35,12 @@ function Register() {
 
     return (
         <div className="Register">
-            <button className={styles.back}>
-                BACK
-            </button>
+            <Link className={styles.backButton} to="/">Back</Link> 
             <h1 className={styles.title}>REGISTER</h1>
             <img className={styles.img} src={logo} alt="" />
             
             <form onSubmit={handleSubmit}>
+
                 <div >
                     <input
                         type="text"
@@ -47,6 +49,7 @@ function Register() {
                         placeholder= "Name"
                         className={styles.name}
                         onChange={e => handleChange(e, "name")}
+
                     />
                     <input
                         type="text"
@@ -55,9 +58,8 @@ function Register() {
                         placeholder= "E-mail"
                         className={styles.email}
                         onChange={e => handleChange(e, "email")}
+
                     />
-                </div>
-                <div >
                     <input
                         type="password"
                         id="password"
@@ -65,6 +67,7 @@ function Register() {
                         placeholder= "Password"
                         className={styles.password}
                         onChange={e => handleChange(e, "password1")}
+
                     />
                     <input
                         type="password"
@@ -73,14 +76,31 @@ function Register() {
                         placeholder= "Repeat Password"
                         className={styles.password}
                         onChange={e => handleChange(e, "password2")}
+
                     />
+                    <div className={styles.bottomLine}></div>
+                    <div >
+                        <input
+                            type="submit"
+                            id="submit"
+                            name="submit"
+                            value="Envoyer"
+                            className={styles.submit}
+                        />
+                    </div>
                 </div>
                 <button
                     type="submit"
                 >
                     Create Account
                 </button>
+
             </form>
+
+
+            <div className={styles.account}>
+                <Link className={styles.accountlink} to="/login">Log in</Link> 
+            </div>
         </div>
     )
 }

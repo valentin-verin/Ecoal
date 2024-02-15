@@ -69,10 +69,9 @@ import { Link } from 'react-router-dom';
 
             </div>
         </Link>
-     
-        
 
-        
+        <div className={styles.bottomLine}></div>
+      
         </>
         )
     }
