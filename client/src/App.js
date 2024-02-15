@@ -1,3 +1,4 @@
+import logo from './logo.svg';
 import './App.css';
 import Home from './Home/home';
 import Research from './Research/research';
@@ -10,15 +11,16 @@ import Splash from './splash/splash';
 import Changename from './changename/changename';
 import Profile from './Profile/profile';
 import {Routes, Route, Link} from 'react-router-dom';
-import addarticle from './img/addArticle.svg';
 import homeimg from './img/home.svg';
 import searchimg from './img/search.svg';
 import loginimg from './img/login.svg';
 import logoutimg from './img/logout.svg';
 
 
+
 function App() {
   return (
+
     <>
 
       <nav className='navbar'>
@@ -29,8 +31,7 @@ function App() {
           <Link to="/research" className='link'>Search</Link>
         </div>
         <div className="icon-container">
-          <Link to="/addarticle" className='link'><img src={addarticle} className="icon" alt="Home" /></Link>
-          <span className="icon-label">Add</span>
+          <Link to="/saved" className='link'>Saved</Link>
         </div>
         <div className="icon-container">
           <Link to="/profile" className='link'>Profile</Link>
@@ -53,6 +54,7 @@ function App() {
         <Route exact={true} path="/profile" element={<Profile />} />
       </Routes>
     </>
+
   );
 }
 
