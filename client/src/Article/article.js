@@ -49,10 +49,11 @@ function Article(props) {
                       
                         {article.tags.map( (tag, index) => (<>
                             <h5>{tag.name}</h5>
+                            </>
                         ))}
 
 
-                        <h5 className={styles.h3grey}>5 MIN TO READ</h5></>
+                        <h5 className={styles.h3grey}>5 MIN TO READ</h5>
 
 
 
