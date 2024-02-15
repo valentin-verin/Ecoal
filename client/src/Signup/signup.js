@@ -15,28 +15,28 @@ function Login() {
                         type="text"
                         id="name"
                         name="name"
-                        placeholder= "name"
+                        placeholder= "Name"
                         className={styles.name}
                     />
                     <input
                         type="text"
                         id="username"
                         name="username"
-                        placeholder= "username"
+                        placeholder= "Username"
                         className={styles.username}
                     />
                     <input
                         type="text"
                         id="phone"
                         name="phone"
-                        placeholder= "phone"
+                        placeholder= "Mobile Phone"
                         className={styles.phone}
                     />
                     <input
                         type="text"
                         id="email"
                         name="email"
-                        placeholder= "email"
+                        placeholder= "E-mail"
                         className={styles.email}
                     />
                 </div>
@@ -45,14 +45,14 @@ function Login() {
                         type="password"
                         id="password"
                         name="password"
-                        placeholder= "password"
+                        placeholder= "Password"
                         className={styles.password}
                     />
                     <input
                         type="password"
                         id="repeat password"
                         name="repeat password"
-                        placeholder= "repeat password"
+                        placeholder= "Repeat Password"
                         className={styles.password}
                     />
                 </div>

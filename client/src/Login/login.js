@@ -15,7 +15,7 @@ function Login() {
                         type="text"
                         id="username"
                         name="username"
-                        placeholder= "username"
+                        placeholder= "Username"
                         className={styles.username}
                     />
                 </div>
@@ -24,7 +24,7 @@ function Login() {
                         type="password"
                         id="password"
                         name="password"
-                        placeholder= "password"
+                        placeholder= "Password"
                         className={styles.password}
                     />
                 </div>

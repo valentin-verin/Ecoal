@@ -13,7 +13,7 @@ function Changename() {
                         type="text"
                         id="Name"
                         name="Name"
-                        defaultValue="Name"
+                        placeholder ="Name"
                         className={styles.username}
                     />
                 </div>
