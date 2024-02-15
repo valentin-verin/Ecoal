@@ -26,7 +26,7 @@ class DatabaseSeeder extends Seeder
 
         $article = Article::create([
             'title' => 'Welcome to ecoal23',
-            'content' => '<h1>Hello from ecoal</h1><p>Nice to see you in <strong>Lens</strong>. Enjoy !</p>',
+            'content' => 'Hello from ecoal Nice to see you in Lens. Enjoy !',
             'thumbnailURL' => '/ecoal.jpg',
             'mediaType' => 'image',
             'mediaURL' => '/ecoal.jpg',
@@ -35,7 +35,7 @@ class DatabaseSeeder extends Seeder
 
         $article2 = Article::create([
             'title' => 'Michael Jackson: King of Pop',
-            'content' => '<h1>Hello from MJ</h1><p>Nice to see you in <strong>USA</strong>. Enjoy !</p>',
+            'content' => 'Hello from MJ Nice to see you in USA. Enjoy !',
             'thumbnailURL' => '/ecoal.jpg',
             'mediaType' => 'image',
             'mediaURL' => '/ecoal.jpg',
