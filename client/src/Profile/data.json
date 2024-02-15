@@ -1,0 +1,17 @@
+[{
+    "userImage":"/womanuser.png",
+    "nickName":"Laura verin",
+    "userName":"@laura_v",
+    "PhoneNumber":"+33652817700",
+    "Email":"Lverinpro@gmail.com",
+    "Password":"123"
+},
+{
+    "userImage":"../img/womanuser.png",
+    "nickName":"Laura verin",
+    "userName":"@laura_v",
+    "PhoneNumber":"+33652817700",
+    "Email":"Lverinpro@gmail.com",
+    "Password":"123"
+}
+]
