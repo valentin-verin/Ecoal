@@ -24,8 +24,6 @@ function App() {
 
   let account = JSON.parse(window.localStorage.getItem('account'))
 
-  console.log(account)
-
   return (
 
     <>
