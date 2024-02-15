@@ -3,7 +3,7 @@ import './App.css';
 import Home from './Home/home';
 import Research from './Research/research';
 import Article from './Article/article';
-import Signup from './Signup/signup';
+import Register from './Signup/signup';
 import Login from './Login/login';
 import NoMatch from './NoMatch/nomatch';
 import Detailarticle from './Detailarticle/detailarticle';
@@ -18,7 +18,9 @@ import logoutimg from './img/logout.svg';
 
 
 
-function App() {
+function App() {  
+
+
   return (
 
     <>
@@ -45,8 +47,8 @@ function App() {
         <Route exact={true} path="/research/:id" element={<Research />} />
         <Route exact={true} path="/article" element={<Article />} />
         <Route exact={true} path="/Addarticle" element={<Detailarticle />} />
-        <Route exact={true} path="/login" element={<Login />} />
-        <Route exact={true} path="/signup" element={<Signup />} />
+        <Route exact={true} path="/login" element={<Login />}/>
+        <Route exact={true} path="/signup" element={<Register />} />
         <Route exact={true} path="/splash" element={<Splash />} />
         <Route exact={true} path="/changename" element={<Changename />} />
         <Route exact={true} path="/Detailarticle" element={<Detailarticle />} />
