@@ -11,7 +11,7 @@ import homeimg from './img/home.svg';
 import searchimg from './img/search.svg';
 import loginimg from './img/login.svg';
 import logoutimg from './img/logout.svg';
-import addarticle from './img/addarticle.svg';
+import addarticle from './img/addArticle.svg';
 import Splash from './splash/splash';
 import Changename from './changename/changename';;
 
