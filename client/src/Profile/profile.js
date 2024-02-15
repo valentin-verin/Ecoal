@@ -6,6 +6,8 @@ import arrowIcon from "../img/arrow.svg";
 function Profile() {
     const userDetail = require('./data.json');
     const userData = userDetail[0];
+
+
     return (
         
         <div>
