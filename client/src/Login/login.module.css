@@ -121,3 +121,7 @@ form{
     text-decoration-line: underline;
     text-transform: uppercase; 
 }
+
+.link{
+    margin-top: 2rem ;
+}
