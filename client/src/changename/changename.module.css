@@ -14,22 +14,10 @@
     align-items: flex-start;
     flex-shrink: 0;
     border: 1px solid #1A1A1A;
-    margin: 32px 0px 0px 0px
+    margin: 0px 0px 0px 0px;
 }
 
-.password {
-    display: flex;
-    width: 375px;
-    height: 30px;
-    /* padding: 24px 20px; */
-    flex-direction: line;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-shrink: 0;
-    border: 1px solid #1A1A1A;
-}
-
-.loginbut {
+.button {
     color: rgba(26, 26, 26, 0.80);
     font-family: "Albert Sans";
     font-size: 16px;
@@ -40,7 +28,7 @@
     letter-spacing: -0.32px;
     text-decoration-line: underline;
     text-transform: uppercase;
-    margin: 32px 20px;
+    margin: 20px 20px;
     border: 0;
     background-color: transparent;
 }

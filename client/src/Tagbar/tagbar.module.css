@@ -3,27 +3,37 @@
 .tag{
     font-family: "Albert Sans"; 
     text-decoration: none;
+    text-transform: uppercase;
     display: flex;
-    padding: 12px 24px;
+    padding: .75rem;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     border: 1px solid #1A1A1A;
+    font-size: 0.75rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 110%; /* 13.2px */ 
+    line-height: 110%; /* 0.825rem */
+    letter-spacing: -0.015rem;
     background: #1A1A1A;
     color: #DDD;
 }
 
 .notclickedtag{
+    text-transform: uppercase;
     text-decoration: none;
     display: flex;
-    padding: 12px 24px;
+    padding: .75rem;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 0.825rem */
+    letter-spacing: -0.015rem;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    border: 1px solid #000;
+    font-weight: 700; 
+    border: 2px solid #000;
     background: transparent;
     color: #1A1A1A;
 }

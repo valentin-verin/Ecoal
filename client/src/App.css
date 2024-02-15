@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+  font-family: "Albert Sans";
+}
+
 body{
   background-color: #DDDDDD;
 }
@@ -11,15 +15,27 @@ body{
   position: fixed;
   bottom: 0; 
   width: 100%;
-  background-color: blanchedalmond;
-  padding: 1.5rem 0;
-  border-top: 3px solid #000;
+  background-color: #DDDDDD;
 }
 
 .navbar .link{
   text-decoration: none;
-  color: #000;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: -0.0175rem;
+  color: #1A1A1A;
   transition: .3s;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  opacity: 35%;
+}
+
+.navbar .link:active{
+  opacity: 100%;
 }
 
 
@@ -32,7 +48,8 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
+  width: -webkit-fill-available;
+  border: 1px solid #1A1A1A;
 }
 
 .icon-label {

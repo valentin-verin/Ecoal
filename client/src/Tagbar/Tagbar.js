@@ -9,12 +9,14 @@ function Tagbar(props) {
         setUsingTag(tagName); 
     };
 
+    const tags = ['All', 'RNB', 'TECHNO', 'JAZZ', 'ROCK', 'RAP']
+
     return (
         <>
-            {props.name.map((tag, index) => (
+            {tags.map((tag, index) => (
                 <Link
                     key={index}
-                    to={`/${tag}`}
+                    to={props.page === "home" ? `/${tag}` : props.page === "research" ? `/research/${tag}` : null}
                     className={usingTag === tag ? styles.tag : styles.notclickedtag}
                     onClick={() => changeBackgroundColor(tag)}
                 >
