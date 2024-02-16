@@ -25,7 +25,7 @@ function Profile() {
                         <img className={styles.arrow} src={arrowIcon} alt="arrow-Icon" />
                     </div>
                 </Link>
-                <Link to="/edit/username" className={styles.detail}>
+                <Link to="/changename" className={styles.detail}>
                     <div className={styles.arrowContainer}>
                         <div className={styles.innerContainer}>
                             <span>Username </span>
