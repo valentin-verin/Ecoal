@@ -85,16 +85,11 @@ function Register() {
                             type="submit"
                             id="submit"
                             name="submit"
-                            value="Envoyer"
+                            value="Create account"
                             className={styles.submit}
                         />
                     </div>
                 </div>
-                <button
-                    type="submit"
-                >
-                    Create Account
-                </button>
 
             </form>
 
