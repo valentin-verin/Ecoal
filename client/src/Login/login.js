@@ -32,7 +32,9 @@ function Login() {
 
     return (
         <div className="login">
-            <Link className={styles.backButton} to="/">Back</Link> 
+            <div className={styles.link}>
+                <Link className={styles.backButton} to="/">Back</Link> 
+            </div>
             <h1 className={styles.title}>LOGIN</h1>
             <img className={styles.img} src={logo} alt="" />
             <form onSubmit={handleSubmit}>
@@ -52,12 +54,13 @@ function Login() {
                         id="password"
                         name="password"
                         placeholder= "Password"
-                        className={styles.password}
+                        className={styles.username}
                         onChange={e => handleChange(e, "password")}
-                    />
+                        />
                 </div>
                 <button
                     type="submit"
+                    className={styles.submit}
                 >
                     Login
                 </button>

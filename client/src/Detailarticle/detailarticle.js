@@ -9,6 +9,8 @@ function Addarticle() {
     const clickedOnBack = () => {
         navigate("/All")
     }
+
+    
     return (
         <>
         <div className={styles.padding}>
