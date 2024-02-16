@@ -37,3 +37,7 @@
     color: #1A1A1A;
 }
 
+.notclickedtag:hover{
+    background-color: #1A1A1A;
+    color: #DDD;
+}

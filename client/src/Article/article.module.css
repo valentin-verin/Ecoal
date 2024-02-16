@@ -66,10 +66,11 @@
 }
 
 .descriptionimg{
+    margin-top: 1rem;
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .description h3{

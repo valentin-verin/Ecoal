@@ -88,20 +88,19 @@
     text-transform: uppercase;
     margin: 32px 20px;
     border: 0;
-    background-color: transparent;
+    background-color: red;
 }
 
 .title {
     color: #1A1A1A;
     font-family: "Albert Sans";
-    font-size: 32px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     line-height: 110%;
-    /* 35.2px */
     letter-spacing: -0.64px;
     text-transform: uppercase;
-    margin: 20px
+    margin: 1rem;
 }
 
 .img {
@@ -134,16 +133,14 @@
 }
 
 .backButton{
-    margin: 0 0.5rem;
-    margin-top: 1rem;
+    margin-left: 1rem;
     padding: 6px 12px;
-    border: 1px solid #1A1A1A;
     font-family: "Albert Sans"; 
     text-decoration: none;
     border: 2px solid #1A1A1A;
     font-weight: 700;
     text-transform: uppercase;
-    background: #DDD;
+    background: transparent;
     color: #1A1A1A;
     font-size: 1rem;
     cursor: pointer;
@@ -181,4 +178,8 @@
     background-color: #1A1A1A;
     color: #DDD;
     text-transform: uppercase;
+}
+
+.link{
+    margin-top: 2rem;
 }

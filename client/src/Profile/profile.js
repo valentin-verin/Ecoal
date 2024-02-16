@@ -1,11 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Await, Link } from 'react-router-dom';
 import styles from "./profile.module.css";
 import arrowIcon from "../img/arrow.svg";
+
+
+const account = window.localStorage.getItem('account');
 
 function Profile() {
     const userDetail = require('./data.json');
     const userData = userDetail[0];
+    
+
     return (
         
         <div>
@@ -23,7 +28,7 @@ function Profile() {
                         <img className={styles.arrow} src={arrowIcon} alt="arrow-Icon" />
                     </div>
                 </Link>
-                <Link to="/edit/username" className={styles.detail}>
+                <Link to="/changename" className={styles.detail}>
                     <div className={styles.arrowContainer}>
                         <div className={styles.innerContainer}>
                             <span>Username </span>
