@@ -2,9 +2,31 @@ import React from 'react';
 import { Await, Link } from 'react-router-dom';
 import styles from "./profile.module.css";
 import arrowIcon from "../img/arrow.svg";
+import axios from "axios";
+import { useNavigate } from 'react-router-dom';
 
 
 const account = window.localStorage.getItem('account');
+
+async function logout(){
+    
+    const navigate = useNavigate();
+
+    try {
+        const token = JSON.parse(window.localStorage.getItem("account"));
+        const response = await axios.get({
+            url: "http://localhost:8000/api/logout",
+            headers: {Authorization: "Bearer " + token}
+        })
+        window.localStorage.removeItem("account");
+        navigate('/');
+    } catch (e) {
+        console.error("ERR", e); 
+    }
+}
+
+
+
 
 function Profile() {
     const userDetail = require('./data.json');
@@ -71,7 +93,7 @@ function Profile() {
 
             <div className={styles.account}>
                 <Link to="/" className={styles.accountlink}>Delete my account</Link>
-                <Link to="/" className={styles.accountlink}>Log out</Link>
+                <button onClick={logout} className={styles.accountlink}>Log out</button>
             </div>
         </div>
     );
